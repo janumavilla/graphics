@@ -1,4 +1,4 @@
-#include <windows.h>
+#include<windows.h>
 #include<GL/glut.h>
 void initGL() {
 glClearColor(0.0, 0.0, 0.0, 1.0);
