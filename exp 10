@@ -1,5 +1,5 @@
-#include &quot;gl/glut.h&quot;
-#include &lt;gl/gl.h&gt;
+#include<gl/glut.h>
+#include<gl/gl.h>
 void Display(void)
 {
 glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -44,11 +44,11 @@ glLoadIdentity();
 int main(int argc, char **argv)
 
 {
-glutInit(&amp;argc, argv);
+glutInit(argc, argv);
 glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 glutInitWindowSize(400, 400);
 glutInitWindowPosition(200, 200);
-glutCreateWindow(&quot;Polygon in OpenGL&quot;);
+glutCreateWindow("Polygon in OpenGL");
 Init();
 glutDisplayFunc(Display);
 glutReshapeFunc(Resize);
